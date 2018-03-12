@@ -1,8 +1,1 @@
 
-*.sdf
-
-paho\.examples/paho_c_ssl_win/paho_pub/x64/
-
-paho\.examples/paho_c_ssl_win/paho_sub/x64/
-
-paho\.examples/paho_c_ssl_win/ssl/
