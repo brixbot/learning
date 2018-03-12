@@ -1,0 +1,7 @@
+*.sdf
+
+paho_pub/x64/
+
+paho_sub/x64/
+
+ssl/
