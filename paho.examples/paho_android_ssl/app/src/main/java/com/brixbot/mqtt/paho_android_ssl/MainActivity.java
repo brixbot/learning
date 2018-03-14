@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             socketOpts.withCaInputStream(this.getResources().openRawResource(R.raw.ca)).
                     withClientP12InputStream(this.getResources().openRawResource(R.raw.client)).
-                    withClientP12Password("a8yyds2207");
+                    withClientP12Password("YourP12FilePassword");
             opts.setSocketFactory(new SocketFactory(socketOpts));
         } catch (IOException | NoSuchAlgorithmException | KeyStoreException | CertificateException | KeyManagementException | UnrecoverableKeyException e) {
             e.printStackTrace();
