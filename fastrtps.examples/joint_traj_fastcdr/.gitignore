@@ -1,0 +1,8 @@
+*.sdf
+*.suo
+
+Debug/
+
+ipch/
+
+x64/
