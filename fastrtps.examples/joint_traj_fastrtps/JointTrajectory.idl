@@ -1,0 +1,34 @@
+struct duration
+{
+  long sec;
+  long nsec;
+};
+
+struct JointTrajectoryPoint
+{
+  sequence<double> positions; 
+  sequence<double> velocities; 
+  sequence<double> accelerations; 
+  sequence<double> effort; 
+  duration time_from_start;
+};
+
+struct time
+{
+  unsigned long sec;
+  unsigned long nsec;
+};
+
+struct Header
+{
+  unsigned long seq;
+  time stamp;
+  string frame_id;
+};
+
+struct JointTrajectory
+{
+  Header header;
+  sequence<string> joint_names;
+  sequence<JointTrajectoryPoint> points;
+};
